@@ -4,7 +4,7 @@ import MeetupList from "../components/meetups/MeetupLists";
 function AllMeetupsPage() {
   const [loadedMeetups, setLoadedMeetups] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  
   useEffect(() => {
     fetch("https://react-meetup-c5bcb-default-rtdb.firebaseio.com/meetups.json")
       .then((response) => {
